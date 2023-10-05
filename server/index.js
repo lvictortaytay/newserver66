@@ -73,7 +73,22 @@ app.delete("/todos/:id" , async (req , res) => {
 })
 
 
- 
+// {
+//     "version":2,
+//     "builds": [
+//         {
+//             "src" :"./index.js",
+//             "use" :"@vercel/node"
+//         }
+//     ],
+//     "routes" :[
+//         {
+//             "src" : "/(.*)",
+//             "dest" : "/"
+
+//         }
+//     ]
+// }
 
 
 
