@@ -10,7 +10,7 @@ const ListTodos = () => {
 
     const handleTodoDelete = async (id) => {
         try {
-            const deleteTodo = await fetch(`http://localhost:${process.env.PORT}//todos/${id}`, {
+            const deleteTodo = await fetch(`http://localhost:4000/todos/${id}`, {
                 "method" :"DELETE"
             } )
 
@@ -23,7 +23,7 @@ const ListTodos = () => {
     const getTodos = async () => {
         try {
             
-            const response = await fetch(`http://localhost:${process.env.PORT}/todos`)
+            const response = await fetch("http://localhost:4000/todos")
             const jsonData = await response.json()
             setTodos(jsonData)
 
@@ -90,4 +90,4 @@ export default ListTodos;
   
 
 
-//use elephant sql ( adjust connection to database in source code )
+//use elephant sql ( adjust connection to database in source code)

@@ -101,6 +101,8 @@ app.delete("/todos/:id" , async (req , res) => {
 
 // process.env.PORT
 
+const port = process.env.PORT || 4000
+
 app.listen(process.env.PORT, () => {
-    console.log("todo server running on port 3000")
+    console.log(port)
 })
