@@ -10,7 +10,7 @@ const ListTodos = () => {
 
     const handleTodoDelete = async (id) => {
         try {
-            const deleteTodo = await fetch(`http://localhost:3000/todos/${id}`, {
+            const deleteTodo = await fetch(`http://localhost:4000/todos/${id}`, {
                 "method" :"DELETE"
             } )
 
@@ -23,13 +23,13 @@ const ListTodos = () => {
     const getTodos = async () => {
         try {
             
-            const response = await fetch("http://localhost:3000/todos")
+            const response = await fetch("http://localhost:4000/todos")
             const jsonData = await response.json()
             setTodos(jsonData)
 
 
         } catch (error) {
-            console.error(error.message)
+            // console.error(error.message)
         }
     }
 
@@ -44,7 +44,7 @@ const ListTodos = () => {
 
     return (
         <Fragment>
-            <table class="table mt-5 text-center">
+            <table className="table mt-5 text-center">
   <thead>
     <tr>
       <th scope="col">#</th>

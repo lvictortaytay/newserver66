@@ -2,9 +2,9 @@ const express = require("express")
 const cors = require("cors")
 const app = express()
 const pool = require("../db")
-const dotenv = require("dotenv")
 
-dotenv.config()
+
+// dotenv.config()
 
 app.use(cors())
 app.use(express.json())
@@ -99,8 +99,8 @@ app.delete("/todos/:id" , async (req , res) => {
 
 
 
+// process.env.PORT
 
-
-app.listen(process.env.PORT, () => {
+app.listen(4000, () => {
     console.log("todo server running on port 3000")
 })

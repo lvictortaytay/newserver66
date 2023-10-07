@@ -15,11 +15,13 @@ const InputTodo = () => {
         e.preventDefault()
         try {
             const body = {description}
-            const response = await fetch("http://localhost:3000/todos" , {
+            const response = await fetch("http://localhost:4000/todos" , {
                 "method": "POST" ,
                 "headers" : {"content-type" :"application/json" },
                 "body" : JSON.stringify(body)
+                
             })
+            console.log("works")
             
  
             window.location = "/"
