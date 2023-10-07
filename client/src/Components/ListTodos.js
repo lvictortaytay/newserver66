@@ -10,7 +10,7 @@ const ListTodos = () => {
 
     const handleTodoDelete = async (id) => {
         try {
-            const deleteTodo = await fetch(`http://localhost:4000/todos/${id}`, {
+            const deleteTodo = await fetch(`https://newserver5.vercel.app/todos/${id}`, {
                 "method" :"DELETE"
             } )
 
@@ -23,7 +23,7 @@ const ListTodos = () => {
     const getTodos = async () => {
         try {
             
-            const response = await fetch("http://localhost:4000/todos")
+            const response = await fetch("https://newserver5.vercel.app/todos")
             const jsonData = await response.json()
             setTodos(jsonData)
 
