@@ -11,6 +11,7 @@ const EditTodo = ({todo}) => {
             e.preventDefault()
             const body = {description}
             const response = await fetch(`https://newserver5.vercel.app/todos/${todo.todo_id}` , {
+              "mode" :"no-cors",
                 "method" : "PUT",
                 "headers" : {"Content-Type" : "application/json"},
                 "body" : JSON.stringify(body)

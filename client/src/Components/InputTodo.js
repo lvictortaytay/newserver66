@@ -16,6 +16,7 @@ const InputTodo = () => {
         try {
             const body = {description}
             const response = await fetch("https://newserver5.vercel.app/todos" , {
+                "mode" :"no-cors",
                 "method": "POST" ,
                 "headers" : {"content-type" :"application/json" },
                 "body" : JSON.stringify(body)
