@@ -78,3 +78,13 @@ const ListTodos = () => {
 
 
 export default ListTodos;
+
+
+
+// {
+//     "dependencies": {
+//       "cors": "^2.8.5",
+//       "pg": "^8.11.3"
+//     }
+//   }
+  
