@@ -33,7 +33,11 @@ const InputTodo = () => {
 
     return (
         <Fragment>
-               <h1 className = "text-center mt-5"> PERN Todo List</h1>
+            <nav className = "nav" style={{backgroundColor:"lightgrey", height:"50px" , width: "110rem" , marginLeft:"-20rem"}}>
+
+            </nav>
+               <h1 className = "text-center mt-5"> Lvictors Todo List!</h1>
+               <p className = "text-center">enter a todo and submit!</p>
                <form onSubmit = {handleSubmit} className = "d-flex mt-5">
                 <input type = "text" className = "form-control" value = {description} onChange = {handleChange}/> 
                 <button className = "btn btn-success">add</button>
