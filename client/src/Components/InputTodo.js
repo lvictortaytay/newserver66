@@ -15,7 +15,7 @@ const InputTodo = () => {
         e.preventDefault()
         try {
             const body = {description}
-            const response = await fetch(`${process.env.DOMAIN}` , {
+            const response = await fetch(`${process.env.DOMAIN}`, {
                 "mode" :"no-cors",
                 "method": "POST" ,
                 "headers" : {"content-type" :"application/json" },
