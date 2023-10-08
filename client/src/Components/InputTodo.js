@@ -7,7 +7,7 @@ const InputTodo = () => {
 
     const handleChange = (e) => {
         const {value} = e.target
-        setDescription(`${value}`)
+        setDescription(value)
   
     }
 
