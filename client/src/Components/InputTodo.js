@@ -15,7 +15,7 @@ const InputTodo = () => {
         e.preventDefault()
         try {
             const body = {description}
-            const response = await fetch("https://newserver5-oy7l5dhqe-lvictors-projects.vercel.app/todos" , {
+            const response = await fetch("https://newserver5-d7giopbu7-lvictors-projects.vercel.app/todos" , {
                 "mode" :"no-cors",
                 "method": "POST" ,
                 "headers" : {"content-type" :"application/json" },

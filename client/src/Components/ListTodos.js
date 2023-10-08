@@ -10,7 +10,7 @@ const ListTodos = () => {
 
     const handleTodoDelete = async (id) => {
         try {
-            const deleteTodo = await fetch(`https://newserver5-oy7l5dhqe-lvictors-projects.vercel.app/todos/${id}`, {
+            const deleteTodo = await fetch(`https://newserver5-d7giopbu7-lvictors-projects.vercel.app/todos/${id}`, {
                 "mode" :"no-cors",
                 "method" :"DELETE"
             } )
@@ -24,7 +24,7 @@ const ListTodos = () => {
     const getTodos = async () => {
         try {
             
-            const response = await fetch("https://newserver5-pl31yyjpo-lvictors-projects.vercel.app/todos" , {
+            const response = await fetch("https://newserver5-d7giopbu7-lvictors-projects.vercel.app/todos" , {
                 "mode" :"no-cors"
             })
             const jsonData = await response.json()
