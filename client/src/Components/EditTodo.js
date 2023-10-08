@@ -10,7 +10,7 @@ const EditTodo = ({todo}) => {
         try {
             e.preventDefault()
             const body = {description}
-            const response = await fetch(`${process.env.DOMAIN}${todo.todo_id}` , {
+            const response = await fetch(`${process.env.DOMAIN}/${todo.todo_id}` , {
               "mode" :"no-cors",
                 "method" : "PUT",
                 "headers" : {"Content-Type" : "application/json"},
