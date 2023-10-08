@@ -15,7 +15,7 @@ const InputTodo = () => {
         e.preventDefault()
         try {
             const body = {description}
-            const response = await fetch(`${process.env.DOMAIN}`, {
+            const response = await fetch(`https://yes-emfl-r4w4dhec9-lvictors-projects.vercel.app/todos`, {
                 "mode" :"no-cors",
                 "method": "POST" ,
                 "headers" : {"content-type" :"application/json" },
