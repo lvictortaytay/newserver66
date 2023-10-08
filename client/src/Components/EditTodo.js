@@ -37,7 +37,7 @@ const EditTodo = ({todo}) => {
         </button>
       </div>
       <div class="modal-body">
-        <input type = "text" className = "form-control" value = {description} onChange={(e) => setDescription(e.target.value)}/>
+        <input type = "text" className = "form-control" value = {description} onChange={(e) => setDescription(`${e.target.value}`)}/>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal" onClick={() => setDescription(todo.description)}>Close</button>
