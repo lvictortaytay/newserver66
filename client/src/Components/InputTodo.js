@@ -22,7 +22,7 @@ const InputTodo = () => {
                 "body" : JSON.stringify(body)
                 
             })
-            console.log("works")
+            console.log(body)
             
  
             window.location = "/"
