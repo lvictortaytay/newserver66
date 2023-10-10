@@ -14,7 +14,8 @@ const pool = new Pool({
     "host":"	bubble.db.elephantsql.com",
     "port":process.env.PORT,
     "database":"sjsskirk",
-  connectionString: process.env.POSTGRES_URL + "?sslmode=require"
+  connectionString: process.env.POSTGRES_URL + "?sslmode=require",
+    API_KEY : process.env.API_KEY
 })
 
 
