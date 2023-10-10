@@ -8,13 +8,23 @@ const Pool = require("pg").Pool
 //     "database":"perntodo"
 // })
 
-
-
-
 const pool = new Pool({
-  connectionString: process.env.POSTGRES_URL + "?sslmode=require",
-  API_KEY : process.env.API_KEY
-  })
+    "user" :"sjsskirk",
+    "password" : "1xTTgukBY8JyEX2A5zEysoW_uh_BgXz0",
+    "host":"	bubble.db.elephantsql.com",
+    "port":process.env.PORT,
+    "database":"sjsskirk",
+  connectionString: process.env.POSTGRES_URL + "?sslmode=require"
+})
+
+
+
+
+
+// const pool = new Pool({
+//   connectionString: process.env.POSTGRES_URL + "?sslmode=require",
+//   API_KEY : process.env.API_KEY
+//   })
 
 
 pool.connect((err) => {
