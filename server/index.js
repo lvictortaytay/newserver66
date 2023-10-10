@@ -14,7 +14,7 @@ app.use(express.json())
 app.post("/todos" , async (req , res) => {
     try{
         const {description} = req.body
-        const newTodo = await pool.query('INSERT INTO todo (description) VALUES("hello") RETURNING *;')
+        const newTodo = await pool.query('INSERT INTO todo (description) VALUES("hello")')
         res.json(newTodo)
     }catch(err){
         console.error(err.message)
